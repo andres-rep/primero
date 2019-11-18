@@ -11,7 +11,12 @@ CURSOR CURSOR1_ IS
 BEGIN
 
 FOR R1 IN CURSOR1_ LOOP
-dbms_output.put_line('DESCRIPCION ...'||R1.CAMPO2);
+
+insert into tabla2(valor,descripcion)
+values(r1.campo1, r2.campo2);
+
 END LOOP;
+
+commit;
   
 END;
