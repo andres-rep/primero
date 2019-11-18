@@ -1,7 +1,7 @@
 create or replace procedure ejemplo2 is
 
 cursor c1 is 
-select * 
+select campo1, campo2
 from tabla 
 where fecha = sysdate;
 
