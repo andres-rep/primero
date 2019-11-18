@@ -23,6 +23,5 @@ BEGIN
     department_id,             -- department_id
     0);                        -- total_score
   
-  COMMIT;
-  
+  COMMIT;  
 END add_eval;
